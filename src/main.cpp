@@ -13,21 +13,6 @@ using namespace Shapes;
 int main() {
   cout << "Shapes demo" << endl;
 
-  // std::vector<Shape> shapes;
-
-  // Circle circle(3);
-  // Square square(5);
-  // IsoscelesTriangle triangle(6, 4);
-
-  // shapes.push_back(circle);
-  // shapes.push_back(square);
-  // shapes.push_back(triangle);
-
-  // double totalArea = 0;
-  // for (auto && shape : shapes) {
-  //   totalArea += shape.area();
-  // }
-
   // Cannot create object of shape ! Class is abstract
   // Shape shape;
 
@@ -40,6 +25,7 @@ int main() {
   // We can call methods defined in shape on shape
   cout << shape->to_string() << endl;
 
+  // Let's see some polymorphism
   std::vector<Shape *> shapes;
 
   shapes.push_back(new Circle(3));

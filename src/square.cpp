@@ -8,7 +8,7 @@ namespace Shapes {
     this->side(side);
   }
 
-  double Square::side(void) {
+  double Square::side(void) const {
     return _side;
   }
 
@@ -16,15 +16,15 @@ namespace Shapes {
     _side = abs(side);
   }
 
-  double Square::area(void) {
+  double Square::area(void) const {
     return side() * side();
   }
   
-  double Square::circumference(void) {
+  double Square::circumference(void) const {
     return 4 * side();
   }
 
-  std::string Square::to_string(void) {
+  std::string Square::to_string(void) const {
     return "Square " + Shape::to_string();
   }
 

@@ -8,7 +8,7 @@ namespace Shapes {
     this->radius(radius);
   }
 
-  double Circle::radius(void) {
+  double Circle::radius(void) const {
     return _radius;
   }
 
@@ -16,15 +16,15 @@ namespace Shapes {
     _radius = abs(radius);
   }
 
-  double Circle::area(void) {
+  double Circle::area(void) const {
     return M_PI * radius() * radius();
   }
   
-  double Circle::circumference(void) {
+  double Circle::circumference(void) const {
     return 2 * M_PI * radius();
   }
 
-  std::string Circle::to_string(void) {
+  std::string Circle::to_string(void) const {
     return "Circle " + Shape::to_string();
   }
 

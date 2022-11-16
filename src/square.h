@@ -12,15 +12,15 @@ namespace Shapes {
       Square(double side);
 
     public:
-      double side(void);
+      double side(void) const;
       void side(double side);
 
     public:
-      double area(void);
-      double circumference(void);
+      double area(void) const;
+      double circumference(void) const;
 
     public:
-      std::string to_string(void);
+      std::string to_string(void) const;
 
     private:
       double _side = 0;

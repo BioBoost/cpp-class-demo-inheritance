@@ -9,7 +9,7 @@ namespace Shapes {
     this->height(height);
   }
 
-  double IsoscelesTriangle::base(void) {
+  double IsoscelesTriangle::base(void) const {
     return _base;
   }
 
@@ -17,7 +17,7 @@ namespace Shapes {
     _base = abs(base);
   }
 
-  double IsoscelesTriangle::height(void) {
+  double IsoscelesTriangle::height(void) const {
     return _height;
   }
 
@@ -25,18 +25,18 @@ namespace Shapes {
     _height = height;
   }
 
-  double IsoscelesTriangle::area(void) {
+  double IsoscelesTriangle::area(void) const {
     return (base() * height()) / 2;
   }
 
-  double IsoscelesTriangle::circumference(void) {
+  double IsoscelesTriangle::circumference(void) const {
     double a = base() / 2;
     double c = sqrt(a * a + height() * height());
 
     return base() + 2 * c;
   }
 
-  std::string IsoscelesTriangle::to_string(void) {
+  std::string IsoscelesTriangle::to_string(void) const {
     return "Isosceles Triangle" + Shape::to_string();
   }
 

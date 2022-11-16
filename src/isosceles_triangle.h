@@ -12,17 +12,17 @@ namespace Shapes {
       IsoscelesTriangle(double base, double height);
 
     public:
-      double base(void);
+      double base(void) const;
       void base(double base);
-      double height(void);
+      double height(void) const;
       void height(double height);
 
     public:
-      double area(void);
-      double circumference(void);
+      double area(void) const;
+      double circumference(void) const;
 
     public:
-      std::string to_string(void);
+      std::string to_string(void) const;
 
     private:
       double _base = 0;

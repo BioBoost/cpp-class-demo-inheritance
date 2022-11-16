@@ -12,15 +12,15 @@ namespace Shapes {
       Circle(double radius);
 
     public:
-      double radius(void);
+      double radius(void) const;
       void radius(double radius);
 
     public:
-      double area(void);
-      double circumference(void);
+      double area(void) const;
+      double circumference(void) const;
 
     public:
-      std::string to_string(void);
+      std::string to_string(void) const;
 
     private:
       double _radius = 0;
